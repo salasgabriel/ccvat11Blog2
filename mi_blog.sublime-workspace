@@ -275,25 +275,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": ".gitignore",
-			"settings":
-			{
-				"buffer_size": 78,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"contents": "",
-			"file": "/C/Users/Karlita/Desktop/compartir_redes_sociales.md",
-			"file_size": -1,
-			"file_write_time": -1,
-			"settings":
-			{
-				"buffer_size": 0,
-				"line_ending": "Windows"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -319,12 +300,14 @@
 	},
 	"file_history":
 	[
+		"/C/Users/Karlita/Desktop/miblog/src/posts/views.py",
+		"/C/Users/Karlita/Desktop/miblog/.gitignore",
+		"/C/Users/Karlita/Desktop/compartir_redes_sociales.md",
 		"/C/Users/Karlita/Desktop/miblog/src/posts/urls.py",
 		"/C/Users/Karlita/Desktop/miblog/src/posts/models.py",
 		"/C/Users/Karlita/Desktop/miblog/src/posts/templatetags/urlify.py",
 		"/C/Users/Karlita/Desktop/miblog/src/templates/post_form.html",
 		"/C/Users/Karlita/Desktop/miblog/src/templates/post_detail.html",
-		"/C/Users/Karlita/Desktop/miblog/src/posts/views.py",
 		"/C/Users/Karlita/Desktop/miblog/src/templates/post_list.html",
 		"/C/Users/Karlita/Desktop/miblog/src/templates/base.html",
 		"/C/Users/Karlita/Desktop/miblog/src/posts/forms.py",
@@ -333,7 +316,6 @@
 		"/C/Users/Karlita/Desktop/miblog/src/posts/templatetags/_init_.py",
 		"/C/Users/Karlita/Desktop/miblog/src/posts/template_tags/urlify.py",
 		"/C/Users/Karlita/Desktop/miblog/src/posts/template_tags/_init_.py",
-		"/C/Users/Karlita/Desktop/compartir_redes_sociales.md",
 		"/C/Users/Karlita/Desktop/miblog/src/miblog/urls.py",
 		"/C/Users/Karlita/Desktop/miblog/src/miblog/settings.py",
 		"/C/Users/Karlita/Desktop/miblog/src/static/css/base.css",
@@ -445,8 +427,7 @@
 		"/C/Users/Karlita/Desktop/testcbv/src/myapp/admin.py",
 		"/C/Users/Karlita/Desktop/testcbv/src/myapp/models.py",
 		"/C/Users/Karlita/Desktop/testcbv/src/manage.py",
-		"/C/Users/Karlita/Desktop/comerciodigital/src/db.sqlite3",
-		"/C/Users/Karlita/Desktop/comerciodigital/src/productos/views.py"
+		"/C/Users/Karlita/Desktop/comerciodigital/src/db.sqlite3"
 	],
 	"find":
 	{
@@ -493,61 +474,8 @@
 	"groups":
 	[
 		{
-			"selected": 1,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": ".gitignore",
-					"settings":
-					{
-						"buffer_size": 78,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								78,
-								78
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "/C/Users/Karlita/Desktop/compartir_redes_sociales.md",
-					"settings":
-					{
-						"buffer_size": 0,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Markdown/Markdown.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		}
 	],
