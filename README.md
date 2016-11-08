@@ -1,5 +1,4 @@
-# probar-django-1.10-Crear-un-Blog
-Crear un blog dinámico con Django (v.1.10), Bootstrap &amp; Pillow 
+# Probar Django 1.10 | Crear un blog dinámico con Django (v.1.10), Bootstrap &amp; Pillow 
 
 
 # Guías útiles
