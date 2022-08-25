@@ -1,57 +1,32 @@
-# blog-python-app
+# Django_blog
 
-> 1.项目说明  
+A blog application made on Django.
 
-项目来自廖雪峰的官网，目的是学习写一个自己的web微框架
+![ezgif com-video-to-gif](https://user-images.githubusercontent.com/38559396/55287491-12c4de80-53c7-11e9-8c6a-3f02b79ba9ca.gif)
 
-如果想学习python 他的教程值得推荐 [廖雪峰官网](http://www.liaoxuefeng.com/)
+**Release 1.0** -Blog application made with Django, To learn more read https://djangocentral.com/building-a-blog-application-with-django
 
+**Release 2.0** - Comments system added. To learn more read - https://djangocentral.com/creating-comments-system-with-django/
 
+![Peek 2019-10-15 11-41](https://user-images.githubusercontent.com/38559396/66840502-c9fcfd80-ef85-11e9-827c-51fa4064a231.gif)
 
-> 2.项目结构
+**Release 2.1** - Pagination added, To learn more read - https://djangocentral.com/adding-pagination-with-django/ <br/><br/>
+Static assets management added, To learn more read - https://djangocentral.com/static-assets-in-django/ <br/><br/>
 
-```
-awesome-python-webapp/   <-- 根目录
-|
-+- backup/               <-- 备份目录
-|
-+- conf/                 <-- 配置文件
-|
-+- dist/                 <-- 打包目录
-|
-+- www/                  <-- Web目录，存放.py文件
-|  |
-|  +- static/            <-- 存放静态文件
-|  |
-|  +- templates/         <-- 存放模板文件
-|
-+- LICENSE               <-- 代码LICENSE
-```
+Wysiwyg editor added, To learn more read - https://djangocentral.com/integrating-summernote-in-django/ <br/><br/>
 
+Sitemap added, To learn more read - https://djangocentral.com/creating-sitemaps-in-django/
 
+Feeds added, To learn more read - https://djangocentral.com/creating-feeds-with-django/
 
-English Documentation
-----------------------------------
-1. Project description
+Using Environment Variables In Django, To learn more read - https://djangocentral.com/environment-variables-in-django/
 
-The project comes from Liao Xuefeng's official website, the purpose is to learn to write your own web microframework
+# Deployment
 
-If you want to learn python, his tutorial is worth recommending Liao Xuefeng official website
+How To Deploy Django App with Nginx, Gunicorn, PostgreSQL and Let’s Encrypt SSL on Ubuntu - https://djangocentral.com/deploy-django-with-nginx-gunicorn-postgresql-and-lets-encrypt-ssl-on-ubuntu/
 
-2. Project structure
+# Contributors
+Contributions are welcome, and they are greatly appreciated! Every little bit helps, and credit will always be given.<br/><br/>
 
-awesome-python-webapp/ <-- root directory
-|
-+- backup/ <-- backup directory
-|
-+- conf/ <-- configuration file
-|
-+- dist/ <-- packaging directory
-|
-+- www/ <-- Web directory, storing .py files
-| |
-| +- static/ <-- Store static files
-| |
-| +- templates/ <-- store template files
-|
-+- LICENSE <-- code LICENSE
+Please star the repo and feel free to make pull requests. <br/><br/>
+<a href='https://ko-fi.com/J3J617AIN' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://az743702.vo.msecnd.net/cdn/kofi4.png?v=2' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
