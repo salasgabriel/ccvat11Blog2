@@ -1,137 +1,71 @@
-# DjangoBlog
+### 2018-07-06说明
 
-🌍
-*[English](/docs/README-en.md) ∙ [简体中文](README.md)*
+之前的服务器地址140.143.205.19已经不可用，现已经更改为如下地址：
 
-基于`python3.8`和`Django4.0`的博客。   
-
-[![Django CI](https://github.com/liangliangyy/DjangoBlog/actions/workflows/django.yml/badge.svg)](https://github.com/liangliangyy/DjangoBlog/actions/workflows/django.yml) [![CodeQL](https://github.com/liangliangyy/DjangoBlog/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/liangliangyy/DjangoBlog/actions/workflows/codeql-analysis.yml) [![codecov](https://codecov.io/gh/liangliangyy/DjangoBlog/branch/master/graph/badge.svg)](https://codecov.io/gh/liangliangyy/DjangoBlog)  [![license](https://img.shields.io/github/license/liangliangyy/djangoblog.svg)]()  
-
-## 主要功能：
-- 文章，页面，分类目录，标签的添加，删除，编辑等。文章、评论及页面支持`Markdown`，支持代码高亮。
-- 支持文章全文搜索。
-- 完整的评论功能，包括发表回复评论，以及评论的邮件提醒，支持`Markdown`。
-- 侧边栏功能，最新文章，最多阅读，标签云等。
-- 支持Oauth登陆，现已有Google,GitHub,facebook,微博,QQ登录。
-- 支持`Redis`缓存，支持缓存自动刷新。
-- 简单的SEO功能，新建文章等会自动通知Google和百度。
-- 集成了简单的图床功能。
-- 集成`django-compressor`，自动压缩`css`，`js`。
-- 网站异常邮件提醒，若有未捕捉到的异常会自动发送提醒邮件。
-- 集成了微信公众号功能，现在可以使用微信公众号来管理你的vps了。
-
-
-## 安装
-mysql客户端从`pymysql`修改成了`mysqlclient`，具体请参考 [pypi](https://pypi.org/project/mysqlclient/) 查看安装前的准备。
-
-使用pip安装： `pip install -Ur requirements.txt`
-
-如果你没有pip，使用如下方式安装：
-- OS X / Linux 电脑，终端下执行: 
-
-    ```
-    curl http://peak.telecommunity.com/dist/ez_setup.py | python
-    curl https://bootstrap.pypa.io/get-pip.py | python
-    ```
-
-- Windows电脑：
-
-    下载 http://peak.telecommunity.com/dist/ez_setup.py 和 https://raw.github.com/pypa/pip/master/contrib/get-pip.py 这两个文件，双击运行。 
-
-
-## 运行
-
- 修改`djangoblog/setting.py` 修改数据库配置，如下所示：
-
-```python
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'djangoblog',
-        'USER': 'root',
-        'PASSWORD': 'password',
-        'HOST': 'host',
-        'PORT': 3306,
-    }
-}
+```
+试用地址：http://122.152.231.228:8080/
+帐号：blog_mini@163.com
+密码：blog_mini
 ```
 
-### 创建数据库
-mysql数据库中执行:
-```sql
-CREATE DATABASE `djangoblog` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci */;
+Blog_mini的Demo网站停了近一个月，由于6月份，几乎整个月的时间都忙于毕业的事情，也没有时间去处理，后段时间由于又给自己放了一个小假期，所以是迟迟未能解决问题，给部分想参考Demo的朋友带来不便，实在是非常抱歉！
+
+现已经购买了一年的服务器时长，所以服务会一直运行下去，感谢大家的关注和支持！
+
+### 2018-02-09说明
+
+之前的服务器地址115.159.72.250已经不可用，现已经更改为如下地址：
+
+```shell
+试用地址：140.143.205.19
+帐号：blog_mini@163.com
+密码：blog_mini
 ```
 
-然后终端下执行:
-```bash
-python manage.py makemigrations
-python manage.py migrate
-```
+承蒙大家喜爱，Blog_mini已经走过两年的时间了，从`star`和`fork`来看，很开心很高兴很多网友朋友能够把它作为自己入门Python和Python Web的一个小项目来进行学习，也正因为如此，一种不可言喻的责任就背负在身上，我总是担心这个小项目中可能出现的不可预知的坑会给部分初学的朋友带来很大的困难。大概从2017年开始，我就有意要整体改进和完善Blog_mini这个小项目。
 
-### 创建超级用户
+然而过去两年作为大学阶段十分重要的两年，确实有太多的事情，因此这个计划一直耽误至今。眼看马上临近毕业，毕业设计也需要花费一定的时间和精力，所以还会继续耽误一小段时间。但不管如何，今年一定会努力争取完成这件事情。
 
- 终端下执行:
-```bash
-python manage.py createsuperuser
-```
-
-### 创建测试数据
-终端下执行:
-```bash
-python manage.py create_testdata
-```
-
-### 收集静态文件
-终端下执行:  
-```bash
-python manage.py collectstatic --noinput
-python manage.py compress --force
-```
-
-### 开始运行：
-执行： `python manage.py runserver`
-
-
-浏览器打开: http://127.0.0.1:8000/  就可以看到效果了。  
-
-## 服务器部署
-
-本地安装部署请参考 [DjangoBlog部署教程](https://www.lylinux.net/article/2019/8/5/58.html)
-有详细的部署介绍.    
-
-本项目已经支持使用docker来部署，如果你有docker环境那么可以使用docker来部署，具体请参考:[docker部署](/docs/docker.md)
-
-
-
-## 更多配置:
-[更多配置介绍](/docs/config.md)  
-[集成elasticsearch](/docs/es.md)
-
-## 问题相关
-
-有任何问题欢迎提Issue,或者将问题描述发送至我邮箱 `liangliangyy#gmail.com`.我会尽快解答.推荐提交Issue方式.  
-
----
- ## 致大家🙋‍♀️🙋‍♂️
- 如果本项目帮助到了你，请在[这里](https://github.com/liangliangyy/DjangoBlog/issues/214)留下你的网址，让更多的人看到。
-您的回复将会是我继续更新维护下去的动力。 
-
-
-## 捐赠
-如果您觉得本项目对您有所帮助，欢迎您请我喝杯咖啡，您的支持是我最大的动力，您可以扫描下方二维码为我付款，谢谢。
-### 支付宝：
-<div>    
-<img src="https://resource.lylinux.net/image/2017/12/16/IMG_0207.jpg" width="150" height="150" />
-</div>  
-
-### 微信：
-<div>    
-<img src="https://resource.lylinux.net/image/2017/12/16/IMG_0206.jpg" width="150" height="150" />
-</div>
+计划将会从界面UI、后台管理系统、开发文档、代码注释等方面对这个小项目进行完善，这样之后，真心希望初学者都能够通过这样一个小项目来加强对Python基础技能以及其它技能的学习，达到可以使用Python进行基本开发这样的一种状态，去体验Python给自己带来的快乐。
 
 ---
 
-感谢jetbrains
-<div>    
-<a href="https://www.jetbrains.com/?from=DjangoBlog"><img src="https://resource.lylinux.net/image/2020/07/01/logo.png" width="150" height="150"></a>
-</div>
+# Blog_mini
+
+### 1.功能强大的开源博客系统
+Blog_mini是一个开源的博客系统，用Python开发完成，具有简洁的界面和强大的后台管理，
+
+使用它，你可以轻松架设属于您自己的个人博客网站！
+
+    只要把Blog_mini部署上，您不需要再进行任何命令上的操作即可以轻松使用和管理您的个人博客！
+
+### 2.完整而详尽的部署文档
+我们撰写了非常详细的部署文档，涵盖了CentOS和Ubuntu，可见下面地址：
+
+    Blog_mini详细部署文档：http://xpleaf.blog.51cto.com/blog/9315560/1748871
+
+作者亲测，在网络环境良好的情况下，最快用3分钟即可以把Blog_mini部署并上线！
+
+### 3.提供试用地址
+如果你只是想试用Blog_mini的功能，我们提供了试用地址：
+
+    试用地址：115.159.72.250:8080
+    帐号：blog_mini@163.com
+    密码：blog_mini
+
+已经有很多网友对Blog_mini进行了体验，我们欢迎您使用，并且能就使用过程中的一些问题给予作者意见和建议。
+
+### 4.值得一学的源代码
+如果你初学Python Web，或者你从来没有进行过一个完整项目的开发，或者你以后想从事Python自动化运维开发的工作，
+
+不妨阅读并学习一下Blog_mini的源代码。
+
+    Blog_mini采用结构清晰的工厂模式来设计开发，其中的一些开发思想模仿了国外牛人miguelgrinberg，因此，值得一学！
+
+### 5.技术支持
+如果你在部署和使用过程中有疑问，请给作者留言：
+
+    作者51cto博客：http://xpleaf.blog.51cto.com
+    作者个人博客网站：http://www.xpleaf.cn(目前不可访问)
+    郑重说明：http://www.xpleaf.com这个域名已经被抢注，并且被用于发布不良内容，我将会进行举报！
+
