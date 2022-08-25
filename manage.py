@@ -6,10 +6,7 @@ import sys
 
 def main():
     """Run administrative tasks."""
-
-    #EDUS: agregar ruta para que detecte la configuracion --> 'blog8.settings.ruta'
-    
-    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'blog8.settings.local')
+    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'djblog.settings.local')
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:
