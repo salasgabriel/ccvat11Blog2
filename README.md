@@ -1,32 +1,56 @@
-# Django_blog
+# YaDjangoBlog
 
-A blog application made on Django.
+![build](https://img.shields.io/travis/twocucao/YaDjangoWeb.svg)
+![pyversions](https://img.shields.io/badge/python%20-3.5%2B-blue.svg)
+![celery](https://img.shields.io/badge/celery-5.0.2-4BC51D.svg)
+![pypi](https://img.shields.io/pypi/v/nine.svg)
+[![contributions welcome](https://img.shields.io/badge/contributions-welcome-ff69b4.svg)](https://github.com/twocucao/YaDjangoWeb/issues)
 
-![ezgif com-video-to-gif](https://user-images.githubusercontent.com/38559396/55287491-12c4de80-53c7-11e9-8c6a-3f02b79ba9ca.gif)
+> Yet Another Django Blog 是的，这是另一个 Django Blog 应用
 
-**Release 1.0** -Blog application made with Django, To learn more read https://djangocentral.com/building-a-blog-application-with-django
+为什么不容错过?
 
-**Release 2.0** - Comments system added. To learn more read - https://djangocentral.com/creating-comments-system-with-django/
+- 这是笔者工作之余用于练手的项目
+- 是引入新技术试验场所
+- 也是 **全干**工程师 (Full Stuff Engineer) 的最新的 DevOps 思考成果
 
-![Peek 2019-10-15 11-41](https://user-images.githubusercontent.com/38559396/66840502-c9fcfd80-ef85-11e9-827c-51fa4064a231.gif)
+## 技术栈
 
-**Release 2.1** - Pagination added, To learn more read - https://djangocentral.com/adding-pagination-with-django/ <br/><br/>
-Static assets management added, To learn more read - https://djangocentral.com/static-assets-in-django/ <br/><br/>
+- 开发与部署环境为 Docker
+- Python 3.9.5
+- 前端 Vue + Vite + axios
+- 后端 [Django 3.0](https://github.com/django/django)
+    + [DjangoRestFramework](https://github.com/tomchristie/django-rest-framework/) + Celery
+- 自动化部署选用工具 Ansible 以及 Docker
+- 后端组件
+    - ElasticSearch 用于搜索和推荐
+    - PostgreSQL 用于数据持久化
+    - Redis 用于 Session / 和缓存
+    - RabbitMQ 分布式队列 / 定时任务
+    - Nginx 用于反向代理
 
-Wysiwyg editor added, To learn more read - https://djangocentral.com/integrating-summernote-in-django/ <br/><br/>
+如果你也是追新的 Django 开发者，一起来提 PR;
 
-Sitemap added, To learn more read - https://djangocentral.com/creating-sitemaps-in-django/
+![pic alt](https://camo.githubusercontent.com/af66ed3ad2d9fd159b9f5fdc92ba0a1804cff642/68747470733a2f2f692e696d6775722e636f6d2f4766746846417a2e706e67)
 
-Feeds added, To learn more read - https://djangocentral.com/creating-feeds-with-django/
+## 特别感谢
 
-Using Environment Variables In Django, To learn more read - https://djangocentral.com/environment-variables-in-django/
+- ansible django stack: https://github.com/jcalazan/ansible-django-stack
+- cookiecutter-django: https://github.com/pydanny/cookiecutter-django
+- djangopackages: https://github.com/djangopackages/djangopackages
+- 董伟明 关于 ElasticSearch
+  的几篇文章 http://www.dongwm.com/archives/%E7%9F%A5%E4%B9%8ELive%E5%85%A8%E6%96%87%E6%90%9C%E7%B4%A2%E4%B9%8B%E4%BD%BF%E7%94%A8Elasticsearch%E6%90%9C%E7%B4%A2/
+- 各个组件的开发者们
+    - ElasticSearch
+    - PostgreSQL
+    - Redis
+    - RabbitMQ
+    - Nginx
+    - Docker
 
-# Deployment
+> Created by Micheal Gardner http://twocucao.xyz Since 2017.02
 
-How To Deploy Django App with Nginx, Gunicorn, PostgreSQL and Let’s Encrypt SSL on Ubuntu - https://djangocentral.com/deploy-django-with-nginx-gunicorn-postgresql-and-lets-encrypt-ssl-on-ubuntu/
+## 许可
 
-# Contributors
-Contributions are welcome, and they are greatly appreciated! Every little bit helps, and credit will always be given.<br/><br/>
+MIT
 
-Please star the repo and feel free to make pull requests. <br/><br/>
-<a href='https://ko-fi.com/J3J617AIN' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://az743702.vo.msecnd.net/cdn/kofi4.png?v=2' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
