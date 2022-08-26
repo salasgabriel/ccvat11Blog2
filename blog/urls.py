@@ -1,13 +1,12 @@
-from django.urls import path
+from django.conf.urls import url
+from django.contrib.auth import views as auth_views
 
 from . import views
 
-
 urlpatterns = [
-    path('', views.index, name='index'),
-    path('blogs/', views.BlogListView.as_view(), name='blogs'),
-    path('blogger/<int:pk>', views.BlogListbyAuthorView.as_view(), name='blogs-by-author'),
-    path('blog/<int:pk>', views.BlogDetailView.as_view(), name='blog-detail'),
-    path('bloggers/', views.BloggerListView.as_view(), name='bloggers'),
-    path('blog/<int:pk>/comment/', views.BlogCommentCreate.as_view(), name='blog_comment'),
+    url(r'^$', views.post_list, name='post_list'),
+    url(r'^login/$', auth_views.login, {'template_name': 'blog/login.html'}, name='login'),
+    url(r'^post/(?P<pk>\d+)/$', views.post_detail, name='post_detail'),
+    url(r'^post/(?P<pk>\d+)/edit/$', views.post_edit, name='post_edit'),
+    url(r'^post/new/$', views.post_new, name='post_new'),
 ]
